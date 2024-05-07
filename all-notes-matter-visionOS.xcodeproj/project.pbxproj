@@ -61,6 +61,10 @@
 		20CF54492BEABE3400232428 /* dt-full-chorus1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20CF542A2BEABE3400232428 /* dt-full-chorus1.mp3 */; };
 		20CF544A2BEABE3400232428 /* dt-guitar-chorus1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20CF542B2BEABE3400232428 /* dt-guitar-chorus1.mp3 */; };
 		20CF544B2BEABE3400232428 /* dt-keys-chorus1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20CF542C2BEABE3400232428 /* dt-keys-chorus1.mp3 */; };
+		20CF544E2BEABF1700232428 /* SongSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CF544D2BEABF1700232428 /* SongSelectionView.swift */; };
+		20CF54502BEAC02A00232428 /* SongCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CF544F2BEAC02A00232428 /* SongCard.swift */; };
+		20CF54532BEAC90D00232428 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 20CF54522BEAC90D00232428 /* fender_stratocaster.usdz */; };
+		20CF54572BEACAA000232428 /* BandImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CF54562BEACAA000232428 /* BandImmersiveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +124,10 @@
 		20CF542A2BEABE3400232428 /* dt-full-chorus1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dt-full-chorus1.mp3"; sourceTree = "<group>"; };
 		20CF542B2BEABE3400232428 /* dt-guitar-chorus1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dt-guitar-chorus1.mp3"; sourceTree = "<group>"; };
 		20CF542C2BEABE3400232428 /* dt-keys-chorus1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dt-keys-chorus1.mp3"; sourceTree = "<group>"; };
+		20CF544D2BEABF1700232428 /* SongSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSelectionView.swift; sourceTree = "<group>"; };
+		20CF544F2BEAC02A00232428 /* SongCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCard.swift; sourceTree = "<group>"; };
+		20CF54522BEAC90D00232428 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
+		20CF54562BEACAA000232428 /* BandImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandImmersiveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,7 @@
 		20CF53BE2BEAB9E800232428 = {
 			isa = PBXGroup;
 			children = (
+				20CF54512BEAC8F600232428 /* 3DModel */,
 				20CF53DF2BEABD9A00232428 /* audioSrc */,
 				20CF53C92BEAB9E800232428 /* all-notes-matter-visionOS */,
 				20CF53CA2BEAB9E800232428 /* Packages */,
@@ -155,6 +164,7 @@
 		20CF53C92BEAB9E800232428 /* all-notes-matter-visionOS */ = {
 			isa = PBXGroup;
 			children = (
+				20CF544C2BEABEFC00232428 /* View */,
 				20CF53CE2BEAB9E800232428 /* all_notes_matter_visionOSApp.swift */,
 				20CF53D02BEAB9E800232428 /* ContentView.swift */,
 				20CF53D22BEAB9E800232428 /* ImmersiveView.swift */,
@@ -324,6 +334,24 @@
 			path = chorus1;
 			sourceTree = "<group>";
 		};
+		20CF544C2BEABEFC00232428 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20CF544D2BEABF1700232428 /* SongSelectionView.swift */,
+				20CF544F2BEAC02A00232428 /* SongCard.swift */,
+				20CF54562BEACAA000232428 /* BandImmersiveView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20CF54512BEAC8F600232428 /* 3DModel */ = {
+			isa = PBXGroup;
+			children = (
+				20CF54522BEAC90D00232428 /* fender_stratocaster.usdz */,
+			);
+			path = 3DModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,6 +415,7 @@
 			files = (
 				20CF54422BEABE3400232428 /* dt-bass-bridge.mp3 in Resources */,
 				20CF54442BEABE3400232428 /* dt-full-bridge.mp3 in Resources */,
+				20CF54532BEAC90D00232428 /* fender_stratocaster.usdz in Resources */,
 				20CF54432BEABE3400232428 /* dt-drums-bridge.mp3 in Resources */,
 				20CF53D82BEAB9EA00232428 /* Preview Assets.xcassets in Resources */,
 				20CF53D52BEAB9EA00232428 /* Assets.xcassets in Resources */,
@@ -446,7 +475,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				20CF53D12BEAB9E800232428 /* ContentView.swift in Sources */,
+				20CF54572BEACAA000232428 /* BandImmersiveView.swift in Sources */,
 				20CF53CF2BEAB9E800232428 /* all_notes_matter_visionOSApp.swift in Sources */,
+				20CF544E2BEABF1700232428 /* SongSelectionView.swift in Sources */,
+				20CF54502BEAC02A00232428 /* SongCard.swift in Sources */,
 				20CF53D32BEAB9E800232428 /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

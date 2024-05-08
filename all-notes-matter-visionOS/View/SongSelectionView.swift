@@ -17,6 +17,7 @@ struct SongSelectionView: View {
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
     @Environment(\.openWindow) var openWindow
     @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         VStack {
             HStack {
@@ -28,9 +29,20 @@ struct SongSelectionView: View {
             NavigationStack {
                 HStack(spacing: 20) {
                     Button(action: {
-                        dismiss()
-                        openWindow(id: "BandImmersive")
-                        
+                        Task {
+                            await openImmersiveSpace(id: "ImmersiveSpace")
+                        }
+//                        if immersiveSpaceIsShown {
+//                            Task {
+//                                await openImmersiveSpace(id: "BandImmersiveSpace")
+//                            }
+//                        } else {
+//                            Task {
+//                                await dismissImmersiveSpace()
+//                            }
+//                        }
+
+                        print("click")
                     }, label: {
                         SongCard(isUnlocked: true, image: "spain")
                     })

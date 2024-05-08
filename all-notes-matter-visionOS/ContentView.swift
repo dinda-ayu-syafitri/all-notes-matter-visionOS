@@ -14,19 +14,19 @@ struct ContentView: View {
     @State private var showImmersiveSpace = false
     @State private var immersiveSpaceIsShown = false
 
-    @Environment(\.openImmersiveSpace) var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+//    @Environment(\.openImmersiveSpace) var openImmersiveSpace
+//    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
     var body: some View {
         VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Toggle("Show ImmersiveSpace", isOn: $showImmersiveSpace)
-                .font(.title)
-                .frame(width: 360)
-                .padding(24)
-                .glassBackgroundEffect()
+//            Model3D(named: "Scene", bundle: realityKitContentBundle)
+//                .padding(.bottom, 50)
+//
+//            Toggle("Show ImmersiveSpace", isOn: $showImmersiveSpace)
+//                .font(.title)
+//                .frame(width: 360)
+//                .padding(24)
+//                .glassBackgroundEffect()
         }
         .padding()
 //        .onChange(of: showImmersiveSpace) { _, newValue in

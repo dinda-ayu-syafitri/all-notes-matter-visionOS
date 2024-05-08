@@ -9,15 +9,21 @@ import SwiftUI
 
 @main
 struct all_notes_matter_visionOSApp: App {
+    @State var immersionType:ImmersionStyle = .mixed
     var body: some Scene {
         WindowGroup(id: "SongSelection") {
             SongSelectionView()
         }
 
-        WindowGroup(id: "BandImmersive") {
-            BandImmersiveView()
+//        WindowGroup(id: "BandImmersive") {
+//            BandImmersiveView()
+//
+//        }.windowStyle(.volumetric)
 
-        }.windowStyle(.volumetric)
+        ImmersiveSpace(id: "BandImmersiveSpace") {
+            BandImmersiveView()
+        }
+        .immersionStyle(selection: $immersionType, in: .mixed)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
